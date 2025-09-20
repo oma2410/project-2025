@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .fad {
+        max-width: 600px;
+        margin: auto;
+        color: rgb(9, 127, 156);
+      }
+
+      summary {
+        cursor: pointer;
+        font-weight: bold;
+        color: rgb(8, 124, 124);
+      }
+
+      summary::marker {
+        content: "▶ ";
+      }
+
+      details[open] summary::marker {
+        content: "▼ ";
+      }
+      p {
+        margin: 5px 0 0;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="fad">
+      <h2>Частые вопросы</h2>
+
+      <details>
+        <summary>Что такое сайт?</summary>
+        <p>Обучения к веб-разработке.</p>
+      </details>
+
+      <details>
+        <summary>Можно ли пользоваться бесплатно?</summary>
+        <p>Да, часть материалов бесплатна.</p>
+      </details>
+
+      <details>
+        <summary>Как связаться с поддержкой?</summary>
+        <p>Напишите нам на мой личный канал Orunbek.com.</p>
+      </details>
+    </section>
+  </body>
+</html>
